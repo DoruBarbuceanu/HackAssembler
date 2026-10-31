@@ -9,14 +9,14 @@
 #include <ctype.h>
 
 /****************************************************************************************************
- * openFile: open a file containing hack symbolic language source code to be parsed.                *
+ * openfile: open a file containing hack symbolic language source code to be parsed.                *
  ****************************************************************************************************/
 FILE* openFile(const char* file_name)
 {
     const char* ext = strrchr(file_name, '.');
 
     if (!ext || strcmp(ext, ".asm") != 0) {
-        fprintf(stderr, "Invalid file extension. Must be of the form \"source_file_name.asm\"\n");
+        fprintf(stderr, "Invalid file name. Must be of the form \"source_file_name.asm\"\n");
         return NULL;
     }
 

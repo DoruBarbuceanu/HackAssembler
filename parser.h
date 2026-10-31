@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#define MAXLINE   1000  /* maximum line length */
+#define MAXLINE   1024  /* maximum line length */
 #define MAXINST   256   /* maximum instruction length */
 
 typedef enum {
